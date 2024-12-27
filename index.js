@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const dotenv = require('dotenv');
 const authRoutes = require('./routes/auth');
-const queryDatabase = require('./util/queryDatabase');
+//const queryDatabase = require('./util/queryDatabase');
 console.log('Starting the server...');
 dotenv.config();
 const app = express();
@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 app.get('/', async (req, resp)=>{
     console.log("we are good");
     const sql = 'SELECT * FROM users';
-    const db_result = await queryDatabase(sql, 'renti');
+    //const db_result = await queryDatabase(sql, 'renti');
     resp.send(`We are good, this is the db result: ${JSON.stringify(db_result)}`);
 })
 
