@@ -5,7 +5,7 @@ function queryDatabase(query, params = [], db='renti') {
     const connectionConfig = {
         host: process.env.MYSQL_HOSTNAME,
         user: process.env.MYSQL_USERNAME,
-        password:'',
+        password: process.env.MYSQL_PASSWORD,
         port: process.env.MYSQL_PORT,
         connectTimeout: 0,
         database: db,
