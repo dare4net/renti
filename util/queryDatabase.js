@@ -6,6 +6,7 @@ function queryDatabase(query, params = [], db='renti') {
         host: process.env.MYSQL_HOSTNAME,
         user: process.env.MYSQL_USERNAME,
         password: process.env.MYSQL_PASSWORD,
+        port: process.env.MYSQL_PORT,
         database: db,
     };
 
