@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const dotenv = require('dotenv');
 const authRoutes = require('./routes/auth');
-//const queryDatabase = require('./util/queryDatabase');
+const queryDatabase = require('./util/queryDatabase');
 console.log('Starting the server...');
 dotenv.config();
 const app = express();
