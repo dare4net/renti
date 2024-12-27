@@ -14,7 +14,8 @@ app.get('/', async (req, resp)=>{
     console.log("we are good");
     const sql = 'SELECT * FROM users';
     //const db_result = await queryDatabase(sql, 'renti');
-    resp.send(`We are good, this is the db result: ${JSON.stringify(db_result)}`);
+    //resp.send(`We are good, this is the db result: ${JSON.stringify(db_result)}`);
+    resp.send(`We are good, this is the db result:`);
 })
 
 // Routes
